@@ -1,2 +1,16 @@
 ##this is my first day to make reserch dairy
 
+过滤数据，某个染色体
+bcftools view -r chr6 Sample_NA18525.gvcf.gz -o chr6.vcf.gz -O z
+
+vcf文件，比较位点，相同差异
+vcf-compare GPU.testM.vcf.gz PGG.testM.vcf.gz
+
+查看进程
+ ps aux | grep yanghong
+ 
+ 加索引 
+tabix
+
+统计行数目
+wc -l filename
