@@ -150,6 +150,17 @@ TIPS：
 外网登陆 ssh wangchenghu@gate2.picb.ac.cn
 登录上自己服务器 ssh wangchenghu@10.10.118.135
 
+bfile 转化vcf
+/picb/pgggtools/binary/plink-1.90b5.1/bin/plink --memory 5120 --bfile PCs.flashpca.scale.20180710.4958inds.autosomes --recode vcf --out <name>
+
+plink2 --bfile PCs.flashpca.scale.20180710.4958inds.autosomes --export vcf --out <name>
+拆分
+plink --file Arab --maf 0.05 --allow-extra-chr --make-bed --out Arab、
+plink2 --vcf test.vcf --allow-extra-chr --make-bed --out test
+ 
+paper引用plink2
+Our primary methods paper is:
+Chang CC, Chow CC, Tellier LCAM, Vattikuti S, Purcell SM, Lee JJ (2015) Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience, 4.
 
 
 
